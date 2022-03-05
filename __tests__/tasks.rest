@@ -1,0 +1,55 @@
+GET http://localhost:4500/tasks
+
+###
+
+GET http://localhost:4500/tasks/621e1b3b3089a1b4075d555a
+
+###
+
+POST http://localhost:4500/tasks
+content-type: application/json
+
+{
+  "title": "Tarea adicional",
+  "responsible": "621e14d097f4543b41a6cfd6",
+  "isCompleted": false
+}
+
+###
+
+POST http://localhost:4500/tasks
+content-type: application/json
+
+{
+  "title": "Tarea principal",
+  "responsible": "621e151897f4543b41a6cfd8",
+  "isCompleted": false
+}
+
+
+###
+
+POST http://localhost:4500/tasks
+content-type: application/json
+
+{
+  "title": "Otra Tarea adicional",
+  "responsible": "621e151897f4543b41a6cfd8",
+  "isCompleted": false
+}
+
+###
+
+PATCH http://localhost:4500/tasks/621a1603386d75fe79fbb93b
+content-type: application/json
+
+{
+  "isCompleted": true
+}
+
+###
+DELETE http://localhost:4500/tasks/621a1603386d75fe79fbb93b
+
+###
+DELETE http://localhost:4500/tasks/62
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGVwZSIsImlkIjoiNjIxZTE0ZDA5N2Y0NTQzYjQxYTZjZmQ2IiwiaWF0IjoxNjQ2MzAxMDY5fQ.BxOjoXNzUwoLRM32A605nZrIubTdELX1pTosB-rGy-A
